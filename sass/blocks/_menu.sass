@@ -1,0 +1,90 @@
+.menu
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: -5px
+    &-title
+        max-width: 800px
+        color: #403F3D
+        text-align: center
+        font-family: Inter
+        font-size: 60px
+        font-style: normal
+        font-weight: 600
+        line-height: 125%
+        margin-bottom: 40px
+        margin-top: 5px
+    &-amazing
+        font-style: italic
+        color: #B0907A
+    &-buttons
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 40px
+        gap: 16px
+    &-button
+        display: flex
+        padding: 8px 16px 8px 8px
+        justify-content: center
+        align-items: center
+        border-radius: 100px
+        border: 1px solid #C1B6AD
+        background-color: #E1D4C9
+        cursor: pointer
+        transition: 0.3s ease-in-out
+        &.active
+            border: 1px solid #665F55
+            background-color: #665F55
+            cursor: default
+        &.active .menu-button__circle
+            background-color: #E1D4C9
+        &.active span
+            color: #E1D4C9
+        &__text
+            color: #403F3D
+            font-family: Inter
+            font-size: 16px
+            font-style: normal
+            font-weight: 600
+            line-height: 150%
+            transition: 0.3s ease-in-out
+        &__circle
+            width: 30px
+            height: 30px
+            display: flex
+            padding: 3px 7px
+            justify-content: center
+            align-items: center
+            border-radius: 100px
+            background: #C1B6AD
+            margin-right: 8px
+            transition: 0.3s ease-in-out
+    &-refresh
+        display: none
+        width: 60px
+        height: 60px
+        justify-content: center
+        align-items: center
+        border-radius: 100px
+        border: 1px solid #665F55
+        background-color: #E1D4C9
+        transition: 0.3s ease-in-out
+        cursor: pointer
+        & path
+            transition: 0.3s ease-in-out
+@media (hover: hover)
+    .menu-button
+        &:hover
+            border: 1px solid #665F55
+            background-color: #665F55
+            cursor: pointer
+        &:hover .menu-button__circle
+            background-color: #E1D4C9
+        &:hover span
+            color: #E1D4C9
+    .menu-refresh
+        &:hover
+            background-color: #665F55
+        &:hover path
+            stroke: #E1D4C9

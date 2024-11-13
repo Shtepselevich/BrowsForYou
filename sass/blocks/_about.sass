@@ -1,0 +1,60 @@
+.about
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: 100px
+    &-title
+        color: #403F3D
+        font-family: Inter
+        font-size: 60px
+        font-style: normal
+        font-weight: 600
+        line-height: 125%
+        margin-bottom: 40px
+        &__perfect
+            color: #B0907A
+            font-style: italic
+    &-box
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        max-height: 1060px
+        width: 1360px
+        margin-left: 0
+        &__wrapper
+            overflow: hidden
+            border-radius: 20px
+        &__wrapper1
+            width: 660px
+            height: 590px
+            margin-bottom: 40px
+            margin-left: 0
+        &__wrapper2
+            width: 660px
+            height: 430px
+            margin-left: 0
+        &__wrapper3
+            width: 660px
+            height: 430px
+            margin-bottom: 40px
+            margin-right: 0
+        &__wrapper4
+            width: 660px
+            height: 590px
+            margin-right: 0
+        &__img
+            object-fit: cover
+            transition: transform 0.5s ease-in-out
+            transform: scale(1.1)
+        &__img1
+            margin-top: -35px
+        &__img2
+            margin-top: -115px
+        &__img3
+            margin-top: -115px
+        &__img4
+            margin-top: -35px
+@media (hover: hover)
+    .about-box__img
+        &:hover
+            transform: scale(1)

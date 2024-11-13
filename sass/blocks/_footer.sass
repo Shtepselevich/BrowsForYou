@@ -1,0 +1,116 @@
+.footer
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    max-height: 450px
+    border-radius: 40px
+    background: #665F55
+    padding: 100px
+    margin-bottom: 40px
+    margin-right: 40px
+    margin-left: 40px
+    gap: 100px
+    &-left
+        max-width: 530px
+        margin-left: 0
+        margin-right: 0
+        &__title
+            color: #E1D4C9
+            font-family: Inter
+            font-size: 60px
+            font-style: normal
+            font-weight: 600
+            line-height: 125%
+            margin-bottom: 40px
+        &__its
+            font-style: italic
+            color: #B0907A
+    &-social
+        display: flex
+        &__link
+            margin-left: 0
+            margin-right: 12px
+        &__link path
+            transition: 0.3s ease-in-out
+        &__button
+            display: flex
+            width: 60px
+            height: 60px
+            justify-content: center
+            align-items: center
+            border-radius: 100px
+            border: 1px solid #C1B6AD
+            background-color: transparent
+            cursor: pointer
+            transition: 0.3s ease-in-out
+    &-right
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: 15px
+        margin-left: 0
+        max-width: 265px
+        &__title
+            color: #E1D4C9
+            font-family: Inter
+            font-size: 24px
+            font-style: normal
+            font-weight: 600
+            line-height: 125%
+            margin-bottom: 40px
+            margin-left: 0
+        &__link
+            color: #E1D4C9
+            font-family: Inter
+            font-size: 16px
+            font-style: normal
+            font-weight: 600
+            line-height: 150%
+            margin-left: 0
+            text-decoration: none
+            display: flex
+            &-wrapper
+                margin-left: 0
+                height: 28px
+                margin-bottom: 16px
+                &::after
+                    display: block
+                    content: ""
+                    width: 97%
+                    margin-left: 3%
+                    height: 2px
+                    background-color: #E1D4C9
+                    transform: scaleX(0)
+                    transition: 0.4s ease-in-out
+        &__info
+            color: #E1D4C9
+            font-family: Inter
+            font-size: 16px
+            font-style: normal
+            font-weight: 600
+            line-height: 150%
+            margin-left: 0
+            margin-bottom: 16px
+            display: flex
+        &__text
+            display: inline-block
+            color: #E1D4C9
+            font-family: Inter
+            font-size: 16px
+            font-style: normal
+            font-weight: 600
+            line-height: 150%
+            margin-left: 8px
+            text-decoration: none
+@media (hover: hover)
+    .footer-social__link
+        &:hover span
+            background-color: #E1D4C9
+        &:hover path
+            stroke: #403F3D
+    .footer-right__link-wrapper
+        &:hover::after
+            width: 97%
+            margin-left: 3%
+            transform: scaleX(1)
+            transition: 0.4s ease-in-out

@@ -1,0 +1,91 @@
+.card
+    display: flex
+    gap: 40px
+    align-items: flex-start
+    &-wrapper
+        display: flex
+        max-height: 506px
+        max-width: 310px
+        flex-direction: column
+        align-items: center
+        border-radius: 40px
+        border: 1px solid #C1B6AD
+        cursor: pointer
+    &-container
+        max-width: 310px
+        max-height: 310px
+        border-radius: 40px
+        overflow: hidden
+        margin: 0
+        &__img
+            width: 100%
+            height: 100%
+            transition: transform 0.5s ease-in-out
+            transform: scale(1.1)
+    &-info
+        padding: 20px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin-left: 0
+        height: 196px
+        &__title
+            color: #403F3D
+            font-family: Inter
+            font-size: 24px
+            font-style: normal
+            font-weight: 600
+            line-height: 125%
+            margin-left: 0
+            margin-bottom: 12px
+        &__text
+            color: #403F3D
+            font-family: Inter
+            font-size: 16px
+            font-style: normal
+            font-weight: 400
+            line-height: 150%
+            margin-bottom: auto
+        &__price
+            color: #403F3D
+            font-family: Inter
+            font-size: 24px
+            font-style: normal
+            font-weight: 600
+            line-height: 125%
+            margin-left: 0
+            margin-bottom: 0
+.menu
+    &-coffee
+        display: flex
+        align-items: center
+        gap: 40px
+        flex-wrap: wrap
+        margin-bottom: 100px
+        & .active
+            display: flex
+    &-tea
+        display: flex
+        align-items: center
+        gap: 40px
+        flex-wrap: wrap
+        margin-bottom: 100px
+        display: none
+        & .active
+            display: flex
+    &-desert
+        display: flex
+        align-items: center
+        gap: 40px
+        flex-wrap: wrap
+        margin-bottom: 100px
+        display: none
+        & .active
+            display: flex
+@media (hover: hover)
+    .card-wrapper
+        &:hover img
+            transform: scale(1.02)
+    .card-container__img
+        &:hover
+            transform: scale(1.02)
